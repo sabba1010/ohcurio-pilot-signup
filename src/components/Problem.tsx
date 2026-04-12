@@ -5,7 +5,7 @@ const Problem = () => {
         Libraries deserve better tools
       </h2>
       <div className="grid md:grid-cols-2 gap-16 md:gap-24">
-        <div>
+        <div className="rounded-[2rem] bg-[#f5f5f5] p-8">
           <h3 className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-6">
             The Problem
           </h3>
@@ -16,7 +16,7 @@ const Problem = () => {
             <li>Valuable community feedback goes uncollected</li>
           </ul>
         </div>
-        <div>
+        <div className="rounded-[2rem] bg-white p-8 shadow-sm">
           <h3 className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-6">
             The Oh Curio Way
           </h3>
