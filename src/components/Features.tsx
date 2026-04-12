@@ -13,12 +13,18 @@ const Features = () => {
       <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
         Tools that make library communication feel human
       </h2>
-      <p className="text-muted-foreground text-center mb-16 text-lg max-w-xl mx-auto">
+      <p className="text-muted-foreground text-center mb-4 text-lg max-w-xl mx-auto">
         Built specifically for public libraries and the communities they serve.
+      </p>
+      <p className="text-center text-sm font-semibold text-foreground/80 mb-12 max-w-xl mx-auto">
+        Built for forward-thinking public libraries · Trusted by early pilot partners
       </p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map((f) => (
-          <div key={f.title} className="p-6 rounded-xl border border-border bg-card">
+          <div
+            key={f.title}
+            className="p-8 rounded-3xl border border-border bg-card transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary/30"
+          >
             <h3 className="text-lg font-bold text-foreground mb-2 font-sans" style={{ fontFamily: 'var(--font-body)' }}>
               {f.title}
             </h3>
