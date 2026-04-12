@@ -56,8 +56,11 @@ const PilotForm = () => {
       <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
         Bring Oh Curio to your library
       </h2>
-      <p className="text-muted-foreground text-center mb-12 text-lg">
+      <p className="text-muted-foreground text-center mb-4 text-lg">
         Join our pilot program and be among the first libraries to transform patron engagement.
+      </p>
+      <p className="mx-auto max-w-xl text-center text-sm font-semibold text-[#D05A35] mb-10">
+        Pilot spots are limited — early access for selected libraries.
       </p>
 
       {submitted ? (
@@ -93,8 +96,11 @@ const PilotForm = () => {
           </div>
           <button type="submit" disabled={submitting}
             className="w-full bg-primary text-primary-foreground py-4 rounded-lg font-semibold text-base hover:opacity-90 transition-opacity disabled:opacity-60">
-            {submitting ? "Submitting..." : "Join Pilot Program"}
+            {submitting ? "Submitting..." : "Apply for Pilot"}
           </button>
+          <p className="text-center text-sm text-muted-foreground mt-4">
+            We’ll reach out personally to schedule your onboarding.
+          </p>
         </form>
       )}
     </section>
