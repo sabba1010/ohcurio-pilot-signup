@@ -9,7 +9,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="px-6 py-24 max-w-6xl mx-auto">
+    <section id="features" className="px-6 py-24 max-w-6xl mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
         Everything you need to engage
       </h2>
