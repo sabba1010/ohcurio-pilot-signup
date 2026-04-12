@@ -8,12 +8,14 @@ const Hero = () => {
       <p className="text-sm font-medium tracking-widest uppercase text-muted-foreground mb-6">
         A patron engagement platform for public libraries
       </p>
-      <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-8 leading-[1.1]">
+      <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-[1.1]">
         Oh Curio!
       </h1>
+      <p className="mx-auto max-w-2xl text-xl md:text-2xl font-semibold text-foreground mb-6">
+        Make every message your patrons actually read.
+      </p>
       <p className="max-w-xl text-lg md:text-xl text-muted-foreground leading-relaxed mb-12">
-        Reconnect your library with the community it serves. Curio helps libraries engage patrons 
-        through meaningful, personalized communication — effortlessly.
+        Reconnect your library with the community it serves. Curio helps libraries engage patrons through meaningful, personalized communication — effortlessly.
       </p>
       <button
         onClick={scrollToForm}

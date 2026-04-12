@@ -1,9 +1,9 @@
 const features = [
-  { title: "Patron Profiles", description: "Understand interests and preferences to tailor every interaction." },
-  { title: "Smart Campaigns", description: "Send the right message to the right patron at the right time." },
+  { title: "Understand what your patrons care about", description: "Understand interests and preferences to tailor every interaction." },
+  { title: "Send messages people actually open", description: "Send the right message to the right patron at the right time." },
   { title: "Event Discovery", description: "Help patrons find programs they'll actually attend and love." },
   { title: "Feedback Loops", description: "Collect real-time input to shape better library services." },
-  { title: "Usage Insights", description: "See what's working and where engagement is growing." },
+  { title: "See what’s working instantly", description: "See what's working and where engagement is growing." },
   { title: "Simple Setup", description: "Get started in days, not months. No technical expertise required." },
 ];
 
@@ -11,7 +11,7 @@ const Features = () => {
   return (
     <section id="features" className="px-6 py-24 max-w-6xl mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-        Everything you need to engage
+        Tools that make library communication feel human
       </h2>
       <p className="text-muted-foreground text-center mb-16 text-lg max-w-xl mx-auto">
         Built specifically for public libraries and the communities they serve.
