@@ -19,8 +19,12 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/95 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#hero" onClick={(event) => scrollToSection(event, "hero")} className="text-xl font-semibold tracking-tight text-foreground">
-          Oh Curio!
+        <a href="#hero" onClick={(event) => scrollToSection(event, "hero")} className="group flex items-center gap-3">
+          <img src="/C:/Users/SHN/.gemini/antigravity/brain/c6b2928b-96f2-49e2-8d99-8888d8626d42/oh_curio_icon_1776054356673.png" 
+               alt="OC Icon" className="h-8 w-8 transition-transform group-hover:scale-110" />
+          <span className="text-2xl font-bold tracking-tight text-foreground font-heading">
+            Oh Curio!
+          </span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">

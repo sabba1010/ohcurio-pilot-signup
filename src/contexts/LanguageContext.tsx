@@ -50,7 +50,7 @@ export const translations: Record<Language, any> = {
     hero_tag: "A patron engagement platform for public libraries",
     hero_title: "Oh Curio!",
     hero_subtitle: "The patron engagement platform public libraries have been waiting for.",
-    hero_cta: "Join the Pilot Program",
+    hero_cta: "Request Early Access",
     hero_desc: "Reconnect your library with the community it serves. Curio helps libraries engage patrons through meaningful, personalized communication — effortlessly.",
     prob_title: "Libraries deserve better tools",
     prob_label: "The Problem",
