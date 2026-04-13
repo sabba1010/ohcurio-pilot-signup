@@ -8,7 +8,7 @@ const Footer = () => {
         <p className="font-bold text-foreground text-base" style={{ fontFamily: 'var(--font-heading)' }}>
           Oh Curio!
         </p>
-        <p>© {new Date().getFullYear()} Oh Curio. {t("footer_rights")}</p>
+        <p>{t("footer_rights")}</p>
         <div className="flex gap-6">
           <a href="mailto:hello@ohcurio.com" className="hover:text-foreground transition-colors">hello@ohcurio.com</a>
           <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>

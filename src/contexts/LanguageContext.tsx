@@ -49,8 +49,8 @@ export const translations: Record<Language, any> = {
     nav_join: "Join Pilot",
     hero_tag: "A patron engagement platform for public libraries",
     hero_title: "Oh Curio!",
-    hero_subtitle: "Make every message your patrons actually read.",
-    hero_cta: "Request Early Access",
+    hero_subtitle: "The patron engagement platform public libraries have been waiting for.",
+    hero_cta: "Join the Pilot Program",
     hero_desc: "Reconnect your library with the community it serves. Curio helps libraries engage patrons through meaningful, personalized communication — effortlessly.",
     prob_title: "Libraries deserve better tools",
     prob_label: "The Problem",
@@ -95,7 +95,7 @@ export const translations: Record<Language, any> = {
     form_submitting: "Submitting...",
     form_success: "Thank you — we'll be in touch shortly.",
     form_footer: "We’ll reach out personally to schedule your onboarding.",
-    footer_rights: "All rights reserved.",
+    footer_rights: "© 2026 Oh Curio! App / Ty Howard / Capital Breaks LLC. All rights reserved.",
   },
   es: {
     nav_why: "¿Por qué Curio?",
@@ -150,7 +150,7 @@ export const translations: Record<Language, any> = {
     form_submitting: "Enviando...",
     form_success: "Gracias, nos pondremos en contacto pronto.",
     form_footer: "Nos comunicaremos personalmente para programar su incorporación.",
-    footer_rights: "Todos los derechos reservados.",
+    footer_rights: "© 2026 Oh Curio! App / Ty Howard / Capital Breaks LLC. Todos los derechos reservados.",
   },
   fr: {
     nav_why: "Pourquoi Curio ?",
@@ -205,7 +205,7 @@ export const translations: Record<Language, any> = {
     form_submitting: "Envoi en cours...",
     form_success: "Merci — nous vous contacterons prochainement.",
     form_footer: "Nous vous contacterons personnellement pour planifier votre intégration.",
-    footer_rights: "Tous droits réservés.",
+    footer_rights: "© 2026 Oh Curio! App / Ty Howard / Capital Breaks LLC. Tous droits réservés.",
   },
   zh: {
     nav_why: "为什么选择 Curio?",
@@ -260,7 +260,7 @@ export const translations: Record<Language, any> = {
     form_submitting: "提交中...",
     form_success: "谢谢——我们会尽快与您联系。",
     form_footer: "我们将亲自与您联系以安排您的入职培训。",
-    footer_rights: "版权所有。",
+    footer_rights: "© 2026 Oh Curio! App / Ty Howard / Capital Breaks LLC. 版权所有。",
   },
   ar: {
     nav_why: "لماذا كيريو؟",
@@ -315,6 +315,6 @@ export const translations: Record<Language, any> = {
     form_submitting: "جاري الإرسال...",
     form_success: "شكراً لك - سنبقى على تواصل قريباً.",
     form_footer: "سنتواصل معك شخصياً لتحديد موعد انضمامك للمنصة.",
-    footer_rights: "جميع الحقوق محفوظة.",
+    footer_rights: "© 2026 Oh Curio! App / Ty Howard / Capital Breaks LLC. جميع الحقوق محفوظة.",
   },
 };
