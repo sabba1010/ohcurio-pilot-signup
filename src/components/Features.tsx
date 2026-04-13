@@ -1,24 +1,28 @@
-const features = [
-  { title: "Understand what your patrons care about", description: "Understand interests and preferences to tailor every interaction." },
-  { title: "Send messages people actually open", description: "Send the right message to the right patron at the right time." },
-  { title: "Event Discovery", description: "Help patrons find programs they'll actually attend and love." },
-  { title: "Feedback Loops", description: "Collect real-time input to shape better library services." },
-  { title: "See what’s working instantly", description: "See what's working and where engagement is growing." },
-  { title: "Multilingual support", description: "English, Spanish, French, Mandarin, Arabic (RTL support). Built for the communities that are already your patrons." },
-  { title: "Simple Setup", description: "Get started in days, not months. No technical expertise required." },
-];
+import { useLanguage } from "../contexts/LanguageContext";
 
 const Features = () => {
+  const { t } = useLanguage();
+
+  const features = [
+    { title: t("feat_1_title"), description: t("feat_1_desc") },
+    { title: t("feat_2_title"), description: t("feat_2_desc") },
+    { title: t("feat_3_title"), description: t("feat_3_desc") },
+    { title: t("feat_4_title"), description: t("feat_4_desc") },
+    { title: t("feat_5_title"), description: t("feat_5_desc") },
+    { title: t("feat_6_title"), description: t("feat_6_desc") },
+    { title: t("feat_7_title"), description: t("feat_7_desc") },
+  ];
+
   return (
     <section id="features" className="px-6 py-24 max-w-6xl mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
-        Tools that make library communication feel human
+        {t("feat_title")}
       </h2>
       <p className="text-muted-foreground text-center mb-4 text-lg max-w-xl mx-auto">
-        Built specifically for public libraries and the communities they serve.
+        {t("feat_desc")}
       </p>
       <p className="text-center text-sm font-semibold text-foreground/80 mb-12 max-w-xl mx-auto">
-        Built for forward-thinking public libraries · Trusted by early pilot partners
+        {t("feat_trust")}
       </p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map((f, index) => (

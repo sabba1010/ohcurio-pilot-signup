@@ -1,12 +1,16 @@
+import { useLanguage } from "../contexts/LanguageContext";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 import type { MouseEvent } from "react";
 
-const navItems = [
-  { label: "Why Curio?", target: "problem" },
-  { label: "Features", target: "features" },
-  { label: "Pilot", target: "pilot-form" },
-];
-
 const Navbar = () => {
+  const { t } = useLanguage();
+
+  const navItems = [
+    { label: t("nav_why"), target: "problem" },
+    { label: t("nav_features"), target: "features" },
+    { label: t("nav_pilot"), target: "pilot-form" },
+  ];
+
   const scrollToSection = (event: MouseEvent<HTMLAnchorElement | HTMLButtonElement>, target: string) => {
     event.preventDefault();
     document.getElementById(target)?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -30,14 +34,20 @@ const Navbar = () => {
               {item.label}
             </a>
           ))}
+          <LanguageSwitcher />
         </div>
 
-        <button
-          onClick={(event) => scrollToSection(event, "pilot-form")}
-          className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
-        >
-          Join Pilot
-        </button>
+        <div className="flex items-center gap-4">
+          <div className="md:hidden">
+            <LanguageSwitcher />
+          </div>
+          <button
+            onClick={(event) => scrollToSection(event, "pilot-form")}
+            className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+          >
+            {t("nav_join")}
+          </button>
+        </div>
       </nav>
     </header>
   );
