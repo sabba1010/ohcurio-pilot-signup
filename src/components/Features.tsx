@@ -4,6 +4,7 @@ const features = [
   { title: "Event Discovery", description: "Help patrons find programs they'll actually attend and love." },
   { title: "Feedback Loops", description: "Collect real-time input to shape better library services." },
   { title: "See what’s working instantly", description: "See what's working and where engagement is growing." },
+  { title: "Multilingual support", description: "English, Spanish, French, Mandarin, Arabic (RTL support). Built for the communities that are already your patrons." },
   { title: "Simple Setup", description: "Get started in days, not months. No technical expertise required." },
 ];
 
@@ -20,10 +21,12 @@ const Features = () => {
         Built for forward-thinking public libraries · Trusted by early pilot partners
       </p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {features.map((f) => (
+        {features.map((f, index) => (
           <div
             key={f.title}
-            className="p-8 rounded-3xl border border-border bg-card transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary/30"
+            className={`p-8 rounded-3xl border border-border bg-card transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary/30 ${
+              index === features.length - 1 ? "sm:col-span-2 lg:col-span-1 lg:col-start-2" : ""
+            }`}
           >
             <h3 className="text-lg font-bold text-foreground mb-2 font-sans" style={{ fontFamily: 'var(--font-body)' }}>
               {f.title}

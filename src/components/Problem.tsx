@@ -5,7 +5,7 @@ const Problem = () => {
         Libraries deserve better tools
       </h2>
       <div className="grid md:grid-cols-2 gap-16 md:gap-24">
-        <div className="rounded-[2rem] bg-[#f5f5f5] p-8">
+        <div className="rounded-[2rem] bg-muted p-8">
           <h3 className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-6">
             The Problem
           </h3>

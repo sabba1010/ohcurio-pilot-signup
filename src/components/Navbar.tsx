@@ -25,7 +25,7 @@ const Navbar = () => {
               key={item.target}
               href={`#${item.target}`}
               onClick={(event) => scrollToSection(event, item.target)}
-              className="text-sm font-medium text-foreground transition hover:text-[#D05A35]"
+              className="text-sm font-medium text-foreground transition hover:text-primary"
             >
               {item.label}
             </a>
@@ -34,7 +34,7 @@ const Navbar = () => {
 
         <button
           onClick={(event) => scrollToSection(event, "pilot-form")}
-          className="rounded-full bg-[#D05A35] px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D05A35]/50"
+          className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
         >
           Join Pilot
         </button>
