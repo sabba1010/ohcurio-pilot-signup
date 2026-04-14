@@ -45,21 +45,21 @@ const Problem = () => {
           <div className="flex-1 bg-muted/30 rounded-[2rem] p-8 md:p-10 border border-border/40 relative overflow-hidden group">
             <h4 className="text-sm font-bold text-muted-foreground mb-8 uppercase tracking-widest flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-destructive/50"></span>
-              The Old Way
+              {t("ui_old_way")}
             </h4>
             
             <div className="space-y-4">
               <div className="bg-background/80 p-5 rounded-2xl border border-border/50 flex flex-col gap-1 grayscale opacity-70">
-                <span className="text-xs font-semibold text-muted-foreground uppercase">System Notification</span>
-                <span className="text-base font-medium text-foreground">Barcode notice</span>
+                <span className="text-xs font-semibold text-muted-foreground uppercase">{t("ui_sys_notif")}</span>
+                <span className="text-base font-medium text-foreground">{t("ui_barcode")}</span>
               </div>
               <div className="bg-background/80 p-5 rounded-2xl border border-border/50 flex flex-col gap-1 grayscale opacity-70">
-                <span className="text-xs font-semibold text-muted-foreground uppercase">Status</span>
-                <span className="text-base font-medium text-foreground">Queue system</span>
+                <span className="text-xs font-semibold text-muted-foreground uppercase">{t("ui_status")}</span>
+                <span className="text-base font-medium text-foreground">{t("ui_queue")}</span>
               </div>
               <div className="bg-background/80 p-5 rounded-2xl border border-border/50 flex flex-col gap-1 grayscale opacity-70">
-                <span className="text-xs font-semibold text-muted-foreground uppercase">Alert</span>
-                <span className="text-base font-medium text-foreground">7 days warning</span>
+                <span className="text-xs font-semibold text-muted-foreground uppercase">{t("ui_alert")}</span>
+                <span className="text-base font-medium text-foreground">{t("ui_7days")}</span>
               </div>
             </div>
           </div>
@@ -70,25 +70,25 @@ const Problem = () => {
             
             <h4 className="text-sm font-bold text-primary mb-8 uppercase tracking-widest flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-success animate-pulse"></span>
-              The Oh Curio Way
+              {t("ui_curio_way")}
             </h4>
             
             <div className="space-y-4 relative z-10">
               <div className="bg-background p-5 rounded-2xl border border-primary/10 shadow-sm flex flex-col gap-1 transform transition-transform hover:scale-[1.02] duration-200">
                 <div className="flex justify-between items-center mb-1">
-                  <span className="text-xs font-semibold text-primary uppercase">Personalized Message</span>
+                  <span className="text-xs font-semibold text-primary uppercase">{t("ui_pers_msg")}</span>
                   <span className="w-2 h-2 rounded-full bg-primary/40"></span>
                 </div>
-                <span className="text-lg font-bold text-foreground">"Spare is waiting for you"</span>
+                <span className="text-lg font-bold text-foreground">{t("ui_spare")}</span>
               </div>
               <div className="bg-background p-5 rounded-2xl border border-primary/10 shadow-sm flex flex-col gap-1 transform transition-transform hover:scale-[1.02] duration-200 delay-75">
                 <div className="flex justify-between items-center mb-1">
-                  <span className="text-xs font-semibold text-success uppercase">Actionable Timeline</span>
+                  <span className="text-xs font-semibold text-success uppercase">{t("ui_act_time")}</span>
                 </div>
-                <span className="text-lg font-bold text-foreground">Pickup by Friday</span>
+                <span className="text-lg font-bold text-foreground">{t("ui_pickup")}</span>
               </div>
               <div className="bg-primary text-primary-foreground p-5 rounded-2xl shadow-md flex items-center justify-between cursor-pointer transform transition-transform hover:scale-[1.02] duration-200 delay-150 hover:shadow-lg active:scale-95">
-                <span className="text-lg font-bold">Tap to renew</span>
+                <span className="text-lg font-bold">{t("ui_renew")}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
               </div>
             </div>
