@@ -48,19 +48,10 @@ const Problem = () => {
               {t("ui_old_way")}
             </h4>
             
-            <div className="space-y-4">
-              <div className="bg-background/80 p-5 rounded-2xl border border-border/50 flex flex-col gap-1 grayscale opacity-70">
-                <span className="text-xs font-semibold text-muted-foreground uppercase">{t("ui_sys_notif")}</span>
-                <span className="text-base font-medium text-foreground">{t("ui_barcode")}</span>
-              </div>
-              <div className="bg-background/80 p-5 rounded-2xl border border-border/50 flex flex-col gap-1 grayscale opacity-70">
-                <span className="text-xs font-semibold text-muted-foreground uppercase">{t("ui_status")}</span>
-                <span className="text-base font-medium text-foreground">{t("ui_queue")}</span>
-              </div>
-              <div className="bg-background/80 p-5 rounded-2xl border border-border/50 flex flex-col gap-1 grayscale opacity-70">
-                <span className="text-xs font-semibold text-muted-foreground uppercase">{t("ui_alert")}</span>
-                <span className="text-base font-medium text-foreground">{t("ui_7days")}</span>
-              </div>
+            <div className="bg-background/80 p-6 rounded-md border border-border flex flex-col gap-2 grayscale opacity-70 font-mono text-sm md:text-base leading-relaxed shadow-inner">
+              <p className="text-foreground">
+                {t("ui_before_msg")}
+              </p>
             </div>
           </div>
 
@@ -74,22 +65,24 @@ const Problem = () => {
             </h4>
             
             <div className="space-y-4 relative z-10">
-              <div className="bg-background p-5 rounded-2xl border border-primary/10 shadow-sm flex flex-col gap-1 transform transition-transform hover:scale-[1.02] duration-200">
+              <div className="bg-background p-6 rounded-2xl border border-primary/10 shadow-lg flex flex-col gap-3 transform transition-transform hover:scale-[1.02] duration-200">
                 <div className="flex justify-between items-center mb-1">
                   <span className="text-xs font-semibold text-primary uppercase">{t("ui_pers_msg")}</span>
-                  <span className="w-2 h-2 rounded-full bg-primary/40"></span>
+                  <span className="w-2 h-2 rounded-full bg-primary/40 animate-pulse"></span>
                 </div>
-                <span className="text-lg font-bold text-foreground">{t("ui_spare")}</span>
-              </div>
-              <div className="bg-background p-5 rounded-2xl border border-primary/10 shadow-sm flex flex-col gap-1 transform transition-transform hover:scale-[1.02] duration-200 delay-75">
-                <div className="flex justify-between items-center mb-1">
-                  <span className="text-xs font-semibold text-success uppercase">{t("ui_act_time")}</span>
+                <p className="text-lg md:text-xl font-bold text-foreground leading-snug">
+                  {t("ui_after_msg")}
+                </p>
+                <div className="mt-3 flex gap-2">
+                  <span className="bg-primary/10 text-primary text-xs font-semibold py-1.5 px-3 rounded-full flex items-center gap-1.5 transition-colors hover:bg-primary/20 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                    Tap to renew
+                  </span>
+                  <span className="bg-success/10 text-success text-xs font-semibold py-1.5 px-3 rounded-full flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    Actionable
+                  </span>
                 </div>
-                <span className="text-lg font-bold text-foreground">{t("ui_pickup")}</span>
-              </div>
-              <div className="bg-primary text-primary-foreground p-5 rounded-2xl shadow-md flex items-center justify-between cursor-pointer transform transition-transform hover:scale-[1.02] duration-200 delay-150 hover:shadow-lg active:scale-95">
-                <span className="text-lg font-bold">{t("ui_renew")}</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
               </div>
             </div>
           </div>

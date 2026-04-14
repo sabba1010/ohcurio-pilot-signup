@@ -116,6 +116,8 @@ export const translations: Record<Language, any> = {
     ui_act_time: "Actionable Timeline",
     ui_pickup: "Pickup by Friday",
     ui_renew: "Tap to renew",
+    ui_before_msg: "NOTICE: Item barcode #39153030842740 has reached the front of the request queue. Please collect within 7 days or your hold will be cancelled.",
+    ui_after_msg: "Spare is waiting for you! Pickup by Friday. Tap to renew or let us know if you need more time.",
   },
   es: {
     nav_why: "¿Por qué Curio?",
@@ -193,6 +195,8 @@ export const translations: Record<Language, any> = {
     ui_act_time: "Línea de Tiempo Activa",
     ui_pickup: "Recoger antes del viernes",
     ui_renew: "Toca para renovar",
+    ui_before_msg: "AVISO: El código de barras #39153030842740 ha llegado al principio de la cola. Por favor recoja en 7 días o se cancelará su retención.",
+    ui_after_msg: "¡Spare te está esperando! Recoger antes del viernes. Toca para renovar o avísanos si necesitas más tiempo.",
   },
   fr: {
     nav_why: "Pourquoi Curio ?",
@@ -270,6 +274,8 @@ export const translations: Record<Language, any> = {
     ui_act_time: "Chronologie Actionnable",
     ui_pickup: "Retrait d'ici vendredi",
     ui_renew: "Appuyez pour renouveler",
+    ui_before_msg: "AVIS : Le code-barres #39153030842740 a atteint l'avant de la file d'attente. Veuillez le récupérer dans les 7 jours ou la réservation sera annulée.",
+    ui_after_msg: "Spare vous attend ! Retrait d'ici vendredi. Appuyez pour renouveler ou dites-nous si vous avez besoin de plus de temps.",
   },
   zh: {
     nav_why: "为什么选择 Curio?",
@@ -347,6 +353,8 @@ export const translations: Record<Language, any> = {
     ui_act_time: "可操作的时间表",
     ui_pickup: "周五前取件",
     ui_renew: "点击续借",
+    ui_before_msg: "通知：物品条形码 #39153030842740 已到达请求队列的最前面。请在7天内领取，否则您的保留将被取消。",
+    ui_after_msg: "Spare 正在等您！周五前取件。点击续借，如果需要更多时间请告诉我们。",
   },
   ar: {
     nav_why: "لماذا كيريو؟",
@@ -424,5 +432,7 @@ export const translations: Record<Language, any> = {
     ui_act_time: "جدول زمني قابل للعمل",
     ui_pickup: "الاستلام بحلول الجمعة",
     ui_renew: "انقر للتجديد",
+    ui_before_msg: "إشعار: لقد وصل الباركود #39153030842740 إلى مقدمة قائمة الانتظار. يرجى الاستلام خلال 7 أيام أو سيتم إلغاء الحجز.",
+    ui_after_msg: "Spare في انتظارك! الاستلام بحلول الجمعة. انقر للتجديد أو أخبرنا إذا كنت بحاجة إلى مزيد من الوقت.",
   },
 };
