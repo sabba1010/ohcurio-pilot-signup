@@ -10,7 +10,6 @@ const Features = () => {
     { title: t("feat_4_title"), description: t("feat_4_desc") },
     { title: t("feat_5_title"), description: t("feat_5_desc") },
     { title: t("feat_6_title"), description: t("feat_6_desc") },
-    { title: t("feat_7_title"), description: t("feat_7_desc") },
   ];
 
   return (
@@ -28,9 +27,7 @@ const Features = () => {
         {features.map((f, index) => (
           <div
             key={f.title}
-            className={`p-8 rounded-3xl border border-border bg-card transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary/30 ${
-              index === features.length - 1 ? "sm:col-span-2 lg:col-span-1 lg:col-start-2" : ""
-            }`}
+            className="p-8 rounded-3xl border border-border bg-card transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary/30"
           >
             <h3 className="text-lg font-bold text-foreground mb-2 font-sans" style={{ fontFamily: 'var(--font-body)' }}>
               {f.title}
