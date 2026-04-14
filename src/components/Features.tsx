@@ -17,11 +17,8 @@ const Features = () => {
       <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 text-center">
         {t("feat_title")}
       </h2>
-      <p className="text-muted-foreground text-center mb-4 text-lg max-w-xl mx-auto">
+      <p className="text-muted-foreground text-center mb-12 text-lg max-w-xl mx-auto">
         {t("feat_desc")}
-      </p>
-      <p className="text-center text-sm font-semibold text-foreground/80 mb-12 max-w-xl mx-auto">
-        {t("feat_trust")}
       </p>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map((f, index) => (
