@@ -78,7 +78,7 @@ export const translations: Record<Language, any> = {
     feat_5_desc: "See what's working and where engagement is growing instantly.",
     feat_6_title: "Multilingual Support",
     feat_6_desc: "English, Spanish, French, Mandarin, Arabic (RTL support). Built for the communities that are already your patrons.",
-    form_title: "Bring Oh Curio to your library",
+    form_title: "Bring Oh Curio! to your library",
     form_subtitle: "Join our pilot program and be among the first libraries to transform patron engagement.",
     form_notice: "Pilot spots are limited — early access for selected libraries.",
     form_name: "Name *",
