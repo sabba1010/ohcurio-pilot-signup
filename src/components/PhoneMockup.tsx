@@ -12,10 +12,10 @@ const SCREEN_H = PHONE_H - BORDER * 2;  // 614
 
 const IFRAME_W = 390;
 const SCALE    = SCREEN_W / IFRAME_W;   // ≈ 0.7282
-const IFRAME_H = SCREEN_H / SCALE;      // unscaled height
 
-// Status bar height (inside screen, overlaid on top of iframe)
-const STATUS_H = 50;
+// Status bar sits above the iframe — reduce iframe's available height accordingly
+const STATUS_H  = 50;
+const IFRAME_H  = (SCREEN_H - STATUS_H) / SCALE;  // unscaled height for the app area
 
 const PhoneMockup = () => {
   const [time, setTime] = useState("");
@@ -199,21 +199,29 @@ const PhoneMockup = () => {
           </div>
 
           {/* ── iframe app content ── */}
-          <iframe
-            src="/app-preview"
-            title="Oh Curio! App Preview"
-            style={{
-              width: IFRAME_W,
-              height: IFRAME_H,
-              border: "none",
-              display: "block",
-              transformOrigin: "top left",
-              transform: `scale(${SCALE})`,
-              background: "#F9F6F2",
-              // Push content down so status bar doesn't overlap the app header
-              marginTop: STATUS_H,
-            }}
-          />
+          {/* position absolute so it sits exactly below the status bar */}
+          <div style={{
+            position: "absolute",
+            top: STATUS_H,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            overflow: "hidden",
+          }}>
+            <iframe
+              src="/app-preview"
+              title="Oh Curio! App Preview"
+              style={{
+                width: IFRAME_W,
+                height: IFRAME_H,
+                border: "none",
+                display: "block",
+                transformOrigin: "top left",
+                transform: `scale(${SCALE})`,
+                background: "#F9F6F2",
+              }}
+            />
+          </div>
 
           {/* Home indicator */}
           <div style={{
