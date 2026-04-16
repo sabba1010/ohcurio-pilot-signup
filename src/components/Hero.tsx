@@ -42,9 +42,14 @@ const Hero = () => {
           <div className="flex items-center justify-center animate-in fade-in zoom-in duration-1000 delay-300">
             <style>{`
               .phone-resp-wrap { zoom: 1; }
-              @media (max-width: 400px)  { .phone-resp-wrap { zoom: 0.72; } }
-              @media (min-width: 401px) and (max-width: 640px)  { .phone-resp-wrap { zoom: 0.82; } }
-              @media (min-width: 641px) and (max-width: 1023px) { .phone-resp-wrap { zoom: 0.90; } }
+              /* xs phones: ~375px screen → phone ~295px wide (310 × 0.95) */
+              @media (max-width: 400px)  { .phone-resp-wrap { zoom: 0.95; } }
+              /* small phones: ~430–500px → phone ~340px wide (310 × 1.1) */
+              @media (min-width: 401px) and (max-width: 560px)  { .phone-resp-wrap { zoom: 1.08; } }
+              /* phablet/small tablet: 561–768px → phone ~360px wide */
+              @media (min-width: 561px) and (max-width: 768px)  { .phone-resp-wrap { zoom: 1.12; } }
+              /* tablet: 769–1023px */
+              @media (min-width: 769px) and (max-width: 1023px) { .phone-resp-wrap { zoom: 0.95; } }
             `}</style>
             <div className="phone-resp-wrap">
               <PhoneMockup />
