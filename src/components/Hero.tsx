@@ -10,13 +10,13 @@ const Hero = () => {
   return (
     <>
       {/* ── Hero Section ── */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden pb-10 lg:pb-0">
         {/* Background Overlay */}
         <div className="absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-background/85 backdrop-blur-[2px]" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center px-6 py-16 max-w-7xl mx-auto w-full relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center px-6 py-12 lg:py-16 max-w-7xl mx-auto w-full relative z-10">
           {/* Left: Copy */}
           <div className="text-left animate-in fade-in slide-in-from-left duration-1000 max-w-2xl">
             <p className="text-lg font-bold tracking-[0.2em] uppercase text-primary mb-8 font-body">
@@ -38,9 +38,11 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Right: Phone Mockup */}
-          <div className="hidden lg:flex items-center justify-center animate-in fade-in zoom-in duration-1000 delay-300">
-            <PhoneMockup />
+          {/* Right: Phone Mockup — visible on all screen sizes */}
+          <div className="flex items-center justify-center animate-in fade-in zoom-in duration-1000 delay-300">
+            <div className="scale-75 sm:scale-90 lg:scale-100 origin-top">
+              <PhoneMockup />
+            </div>
           </div>
         </div>
       </section>
