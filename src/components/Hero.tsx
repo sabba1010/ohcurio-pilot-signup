@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <>
       {/* ── Hero Section ── */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden pb-10 lg:pb-0">
+      <section className="relative flex items-center overflow-hidden py-14 lg:min-h-[90vh] lg:py-0">
         {/* Background Overlay */}
         <div className="absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-background/85 backdrop-blur-[2px]" />
@@ -40,7 +40,13 @@ const Hero = () => {
 
           {/* Right: Phone Mockup — visible on all screen sizes */}
           <div className="flex items-center justify-center animate-in fade-in zoom-in duration-1000 delay-300">
-            <div className="scale-75 sm:scale-90 lg:scale-100 origin-top">
+            <style>{`
+              .phone-resp-wrap { zoom: 1; }
+              @media (max-width: 400px)  { .phone-resp-wrap { zoom: 0.72; } }
+              @media (min-width: 401px) and (max-width: 640px)  { .phone-resp-wrap { zoom: 0.82; } }
+              @media (min-width: 641px) and (max-width: 1023px) { .phone-resp-wrap { zoom: 0.90; } }
+            `}</style>
+            <div className="phone-resp-wrap">
               <PhoneMockup />
             </div>
           </div>
