@@ -32,16 +32,14 @@ const Problem = () => {
         </div>
       </div>
 
-      {/* Before vs After Experience */}
+      {/* Before vs After Experience - Hidden as requested
       <div className="mt-20 md:mt-32 max-w-5xl mx-auto animate-in fade-in slide-in-from-bottom-8 duration-1000">
         <div className="flex flex-col md:flex-row gap-8 items-stretch justify-center relative">
           
-          {/* Arrow pointing from Before to After for medium+ screens */}
           <div className="hidden md:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-background rounded-full items-center justify-center border border-border shadow-sm text-muted-foreground">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </div>
 
-          {/* Before Column */}
           <div className="flex-1 bg-muted/30 rounded-[2rem] p-8 md:p-10 border border-border/40 relative overflow-hidden group">
             <h4 className="text-sm font-bold text-muted-foreground mb-8 uppercase tracking-widest flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-destructive/50"></span>
@@ -55,7 +53,6 @@ const Problem = () => {
             </div>
           </div>
 
-          {/* After Column */}
           <div className="flex-1 bg-gradient-to-br from-primary/10 to-primary/5 rounded-[2rem] p-8 md:p-10 border border-primary/20 shadow-2xl shadow-primary/5 relative overflow-hidden transform transition-transform hover:-translate-y-1 duration-300">
             <div className="absolute -top-24 -right-24 w-48 h-48 bg-primary/20 rounded-full blur-3xl"></div>
             
@@ -89,6 +86,7 @@ const Problem = () => {
 
         </div>
       </div>
+      */}
     </section>
   );
 };
