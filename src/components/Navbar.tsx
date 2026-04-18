@@ -6,6 +6,7 @@ const Navbar = () => {
   const { t } = useLanguage();
 
   const navItems = [
+    { label: t("nav_about"), target: "about" },
     { label: t("nav_why"), target: "problem" },
     { label: t("nav_features"), target: "features" },
     { label: t("nav_pilot"), target: "pilot-form" },

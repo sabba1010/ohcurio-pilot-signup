@@ -118,6 +118,20 @@ export const translations: Record<Language, any> = {
     ui_renew: "Tap to renew",
     ui_before_msg: "NOTICE: Item barcode #39153030842740 has reached the front of the request queue. Please collect within 7 days or your hold will be cancelled.",
     ui_after_msg: "Spare is waiting for you! Pickup by Friday. Tap to renew or let us know if you need more time.",
+    nav_about: "About Us",
+    about_title: "About Oh Curio",
+    about_intro: "Oh Curio is a modern digital library platform designed to enhance how patrons discover, access, and engage with library services—both online and in-person.",
+    about_p1: "Oh Curio brings together intuitive design and powerful functionality to create a seamless library experience. From browsing books and managing queues to attending events and tracking reading progress, the platform ensures everything is accessible in one place.",
+    about_p2: "For staff, Oh Curio provides smart tools for managing patrons, analyzing engagement, organizing events, and maintaining efficient workflows. With real-time insights and streamlined operations, libraries can deliver better service with less effort.",
+    about_mission_title: "Mission",
+    about_mission_desc: "Our mission is to modernize library systems by making them more interactive, efficient, and user-friendly for both patrons and staff.",
+    about_features_title: "Key Features",
+    about_feat_1: "Smart book discovery and personalized recommendations",
+    about_feat_2: "Fully responsive mobile and web experience",
+    about_feat_3: "Patron and staff management system",
+    about_feat_4: "Advanced analytics and usage insights",
+    about_feat_5: "Event management and registration system",
+    about_feat_6: "Real-time sync with ILS systems (Koha integration)",
   },
   es: {
     nav_why: "¿Por qué Oh Curio!?",
@@ -197,6 +211,7 @@ export const translations: Record<Language, any> = {
     ui_renew: "Toca para renovar",
     ui_before_msg: "AVISO: El código de barras #39153030842740 ha llegado al principio de la cola. Por favor recoja en 7 días o se cancelará su retención.",
     ui_after_msg: "¡Spare te está esperando! Recoger antes del viernes. Toca para renovar o avísanos si necesitas más tiempo.",
+    nav_about: "Sobre Nosotros",
   },
   fr: {
     nav_why: "Pourquoi Oh Curio !?",
@@ -276,6 +291,7 @@ export const translations: Record<Language, any> = {
     ui_renew: "Appuyez pour renouveler",
     ui_before_msg: "AVIS : Le code-barres #39153030842740 a atteint l'avant de la file d'attente. Veuillez le récupérer dans les 7 jours ou la réservation sera annulée.",
     ui_after_msg: "Spare vous attend ! Retrait d'ici vendredi. Appuyez pour renouveler ou dites-nous si vous avez besoin de plus de temps.",
+    nav_about: "À Propos",
   },
   zh: {
     nav_why: "为什么选择 Oh Curio!?",
@@ -355,6 +371,7 @@ export const translations: Record<Language, any> = {
     ui_renew: "点击续借",
     ui_before_msg: "通知：物品条形码 #39153030842740 已到达请求队列的最前面。请在7天内领取，否则您的保留将被取消。",
     ui_after_msg: "Spare 正在等您！周五前取件。点击续借，如果需要更多时间请告诉我们。",
+    nav_about: "关于我们",
   },
   ar: {
     nav_why: "لماذا أوه كيريو؟",
@@ -434,5 +451,6 @@ export const translations: Record<Language, any> = {
     ui_renew: "انقر للتجديد",
     ui_before_msg: "إشعار: لقد وصل الباركود #39153030842740 إلى مقدمة قائمة الانتظار. يرجى الاستلام خلال 7 أيام أو سيتم إلغاء الحجز.",
     ui_after_msg: "Spare في انتظارك! الاستلام بحلول الجمعة. انقر للتجديد أو أخبرنا إذا كنت بحاجة إلى مزيد من الوقت.",
+    nav_about: "من نحن",
   },
 };
