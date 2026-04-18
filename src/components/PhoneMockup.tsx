@@ -4,11 +4,11 @@
  */
 import { useEffect, useState } from "react";
 
-const PHONE_W  = 390;
-const PHONE_H  = 760;
-const BORDER   = 13;
-const SCREEN_W = PHONE_W - BORDER * 2;  // 364
-const SCREEN_H = PHONE_H - BORDER * 2;  // 734
+const PHONE_W  = 340;
+const PHONE_H  = 660;
+const BORDER   = 12;
+const SCREEN_W = PHONE_W - BORDER * 2;  // 316
+const SCREEN_H = PHONE_H - BORDER * 2;  // 636
 
 const IFRAME_W = 430;
 const SCALE    = SCREEN_W / IFRAME_W;   // smaller content inside the phone
