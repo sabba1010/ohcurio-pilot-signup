@@ -39,7 +39,7 @@ const Hero = () => {
           </div>
 
           {/* Right: Phone mockup with light mobile shadow */}
-          <div className="flex items-center justify-center animate-in fade-in zoom-in duration-1000 delay-300 overflow-x-auto">
+          <div className="flex items-center justify-center animate-in fade-in zoom-in duration-1000 delay-300 overflow-visible p-12 lg:p-20">
             <div className="min-w-[340px] w-full lg:max-w-[380px]">
               <PhoneMockup />
             </div>

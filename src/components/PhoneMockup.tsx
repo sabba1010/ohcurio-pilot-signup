@@ -50,11 +50,10 @@ const PhoneMockup = () => {
             #1A1A1C 100%
           );
           box-shadow:
-            0 22px 45px rgba(0,0,0,0.12),
-            0 10px 24px rgba(0,0,0,0.08),
-            0 0 0 1px rgba(255,255,255,0.08) inset,
-            0 1px 0 rgba(255,255,255,0.10) inset,
-            inset 0 -1px 0 rgba(0,0,0,0.2);
+            0 50px 100px -20px rgba(0, 0, 0, 0.25),
+            0 30px 60px -30px rgba(0, 0, 0, 0.3),
+            inset 0 -2px 6px 0 rgba(255, 255, 255, 0.1),
+            0 0 0 1px rgba(255, 255, 255, 0.12) inset;
         }
         .iphone-btn-black {
           background: linear-gradient(180deg, #3A3A3C 0%, #1C1C1E 100%);
