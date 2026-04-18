@@ -38,20 +38,9 @@ const Hero = () => {
             </p>
           </div>
 
-          {/* Right: Phone Mockup — visible on all screen sizes */}
-          <div className="flex items-center justify-center animate-in fade-in zoom-in duration-1000 delay-300">
-            <style>{`
-              .phone-resp-wrap { zoom: 1; }
-              /* xs phones: ~375px screen → phone ~295px wide (310 × 0.95) */
-              @media (max-width: 400px)  { .phone-resp-wrap { zoom: 0.95; } }
-              /* small phones: ~430–500px → phone ~340px wide (310 × 1.1) */
-              @media (min-width: 401px) and (max-width: 560px)  { .phone-resp-wrap { zoom: 1.08; } }
-              /* phablet/small tablet: 561–768px → phone ~360px wide */
-              @media (min-width: 561px) and (max-width: 768px)  { .phone-resp-wrap { zoom: 1.12; } }
-              /* tablet: 769–1023px */
-              @media (min-width: 769px) and (max-width: 1023px) { .phone-resp-wrap { zoom: 0.95; } }
-            `}</style>
-            <div className="phone-resp-wrap">
+          {/* Right: Phone mockup with light mobile shadow */}
+          <div className="flex items-center justify-center animate-in fade-in zoom-in duration-1000 delay-300 overflow-x-auto">
+            <div className="min-w-[390px] w-full lg:max-w-[420px]">
               <PhoneMockup />
             </div>
           </div>
@@ -65,7 +54,7 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-8 animate-in fade-in zoom-in duration-1000">
             {/* Card 1 */}
-            <div className="w-80 pt-5 pb-7 px-6 bg-white rounded-[2rem] shadow-2xl border border-border/50 animate-float z-30">
+            <div className="w-full sm:w-80 pt-5 pb-7 px-6 bg-white rounded-[2rem] shadow-2xl border border-border/50 animate-float z-30">
               <p className="text-xs font-bold text-accent uppercase tracking-widest mb-3">
                 {t("card_1_label")}
               </p>
@@ -78,7 +67,7 @@ const Hero = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="w-80 pt-5 pb-7 px-6 bg-white rounded-[2rem] shadow-2xl border border-border/50 animate-float [animation-delay:-2s] z-20">
+            <div className="w-full sm:w-80 pt-5 pb-7 px-6 bg-white rounded-[2rem] shadow-2xl border border-border/50 animate-float [animation-delay:-2s] z-20">
               <p className="text-xs font-bold text-success uppercase tracking-widest mb-3">
                 {t("card_2_label")}
               </p>
@@ -91,7 +80,7 @@ const Hero = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="w-80 pt-5 pb-7 px-6 bg-white rounded-[2rem] shadow-2xl border border-border/50 animate-float [animation-delay:-4s] z-10">
+            <div className="w-full sm:w-80 pt-5 pb-7 px-6 bg-white rounded-[2rem] shadow-2xl border border-border/50 animate-float [animation-delay:-4s] z-10">
               <p className="text-xs font-bold text-secondary uppercase tracking-widest mb-3">
                 {t("card_3_label")}
               </p>

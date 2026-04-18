@@ -4,14 +4,14 @@
  */
 import { useEffect, useState } from "react";
 
-const PHONE_W  = 310;
-const PHONE_H  = 640;
+const PHONE_W  = 390;
+const PHONE_H  = 760;
 const BORDER   = 13;
-const SCREEN_W = PHONE_W - BORDER * 2;  // 284
-const SCREEN_H = PHONE_H - BORDER * 2;  // 614
+const SCREEN_W = PHONE_W - BORDER * 2;  // 364
+const SCREEN_H = PHONE_H - BORDER * 2;  // 734
 
-const IFRAME_W = 390;
-const SCALE    = SCREEN_W / IFRAME_W;   // ≈ 0.7282
+const IFRAME_W = 430;
+const SCALE    = SCREEN_W / IFRAME_W;   // smaller content inside the phone
 
 // Status bar sits above the iframe — reduce iframe's available height accordingly
 const STATUS_H  = 50;
@@ -50,11 +50,11 @@ const PhoneMockup = () => {
             #1A1A1C 100%
           );
           box-shadow:
-            0 60px 120px rgba(0,0,0,0.55),
-            0 20px 40px rgba(0,0,0,0.35),
-            0 0 0 1px rgba(255,255,255,0.10) inset,
-            0 1px 0 rgba(255,255,255,0.14) inset,
-            inset 0 -1px 0 rgba(0,0,0,0.4);
+            0 22px 45px rgba(0,0,0,0.12),
+            0 10px 24px rgba(0,0,0,0.08),
+            0 0 0 1px rgba(255,255,255,0.08) inset,
+            0 1px 0 rgba(255,255,255,0.10) inset,
+            inset 0 -1px 0 rgba(0,0,0,0.2);
         }
         .iphone-btn-black {
           background: linear-gradient(180deg, #3A3A3C 0%, #1C1C1E 100%);
@@ -209,8 +209,8 @@ const PhoneMockup = () => {
             overflow: "hidden",
           }}>
             <iframe
-              src="/app-preview"
-              title="Oh Curio! App Preview"
+              src="https://react-xasr29ai.stackblitz.io/"
+              title="Oh Curio! Mobile Preview"
               style={{
                 width: IFRAME_W,
                 height: IFRAME_H,
