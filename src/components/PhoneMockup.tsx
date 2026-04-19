@@ -208,7 +208,7 @@ const PhoneMockup = () => {
             overflow: "hidden",
           }}>
             <iframe
-              src="https://react-xasr29ai.stackblitz.io/"
+              src="https://no-delete-red.vercel.app/"
               title="Oh Curio! Mobile Preview"
               style={{
                 width: IFRAME_W,
