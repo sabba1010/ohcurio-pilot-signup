@@ -69,7 +69,7 @@ const About = () => {
 
           <div className="flex gap-4 p-6 rounded-2xl border border-dashed border-border/60 bg-muted/30">
              <p className="text-sm text-muted-foreground leading-relaxed">
-               Oh Curio is a modern library platform that simplifies how users explore books, manage activities, and engage with library services, while providing staff with powerful tools for efficient management and insights.
+               Oh Curio! is a modern library platform that simplifies how users explore books, manage activities, and engage with library services, while providing staff with powerful tools for efficient management and insights.
              </p>
           </div>
         </div>
