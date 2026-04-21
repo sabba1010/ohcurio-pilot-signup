@@ -20,15 +20,15 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="about" className="py-24 bg-background">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* Label */}
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-[11px] font-bold tracking-[0.18em] text-[#c0392b] uppercase mb-3"
+          className="text-[11px] font-bold tracking-[0.18em] text-[#c0392b] uppercase mb-3 text-center"
         >
           {t("about_tag")}
         </motion.p>
@@ -39,7 +39,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="text-[34px] md:text-[40px] font-serif font-bold text-gray-900 leading-tight mb-1"
+          className="text-[34px] md:text-[40px] font-serif font-bold text-gray-900 leading-tight mb-1 text-center"
         >
           {t("about_title_1")}
         </motion.h1>
@@ -49,7 +49,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-[30px] md:text-[36px] font-serif font-bold text-[#c0392b] leading-tight mb-10"
+          className="text-[30px] md:text-[36px] font-serif font-bold text-[#c0392b] leading-tight mb-10 text-center"
         >
           {t("about_title_2")}
         </motion.h2>
@@ -86,7 +86,7 @@ const About = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="border border-gray-100 rounded-3xl p-8 md:p-12 mb-10 bg-white shadow-sm max-w-4xl"
+          className="border border-gray-100 rounded-3xl p-8 md:p-12 mb-10 bg-white shadow-sm max-w-4xl mx-auto"
         >
           <p className="text-[17px] text-gray-700 leading-[1.8] font-sans mb-8">
             {t("about_story_p1")}

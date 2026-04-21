@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Problem from "@/components/Problem";
 import Features from "@/components/Features";
 import About from "@/components/About";
+import FAQ from "@/components/FAQ";
 import PilotForm from "@/components/PilotForm";
 import Footer from "@/components/Footer";
 
@@ -11,6 +12,7 @@ const Index = () => (
     <Navbar />
     <Hero />
     <About />
+    <FAQ />
     <Problem />
     <Features />
     <PilotForm />
