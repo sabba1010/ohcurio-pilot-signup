@@ -16,10 +16,14 @@ const About = () => {
     { icon: "■", l1: t("about_badge_3_l1"), l2: t("about_badge_3_l2") },
   ];
 
+
+
+
   return (
     <section id="about" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-6">
 
+        
         {/* Label */}
         <motion.p
           initial={{ opacity: 0, y: 10 }}
