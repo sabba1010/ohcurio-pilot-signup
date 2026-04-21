@@ -19,7 +19,7 @@ const About = () => {
   const rotations = [-4, 0, 4];
 
   return (
-    <section id="about" className="py-24 bg-background">
+    <section id="about" className="py-6 bg-background">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Label */}
