@@ -105,25 +105,25 @@ const About = () => {
         </motion.div>
 
         {/* Badges Row */}
-        <div className="border border-gray-100 rounded-3xl overflow-hidden grid grid-cols-1 md:grid-cols-3 mb-12 bg-gray-50/30">
+        <div className="border border-gray-100 grid grid-cols-1 md:grid-cols-3 mb-12 bg-white">
           {badges.map((badge, i) => (
             <div
               key={i}
               className={`flex flex-col items-center justify-center text-center py-10 px-6 ${i < 2 ? "md:border-r border-gray-100" : ""
                 } ${i > 0 ? "border-t md:border-t-0 border-gray-100" : ""}`}
             >
-              <span className="text-primary/40 text-lg mb-4">{badge.icon}</span>
+              <span className="text-gray-400 text-lg mb-4">{badge.icon}</span>
               <p className="text-[14px] font-bold text-gray-800 mb-1">{badge.l1}</p>
               <p className="text-[13px] text-gray-500 font-medium">{badge.l2}</p>
             </div>
           ))}
         </div>
 
-        {/* Footer Link */}
-        <div className="border-t border-gray-100 pt-6 text-center">
+        {/* Footer Link Bar */}
+        <div className="border-y border-gray-100 py-5 text-center">
           <a
             href="#"
-            className="text-[11px] font-bold tracking-[0.15em] text-[#c0392b] hover:text-[#922b21] transition-colors uppercase"
+            className="text-[12px] font-bold tracking-[0.18em] text-accent hover:opacity-80 transition-opacity uppercase"
           >
             {t("about_directors_link")}
           </a>
