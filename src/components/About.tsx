@@ -1,13 +1,16 @@
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion } from "framer-motion";
+import about1 from "../asstes/about1.jpeg";
+import about2 from "../asstes/about2.jpeg";
+import about3 from "../asstes/about3.jpeg";
 
 const About = () => {
   const { t } = useLanguage();
 
   const photos = [
-    { src: "/about1.jpg", cap: t("about_gallery_cap_1") },
-    { src: "/about2.jpg", cap: t("about_gallery_cap_2") },
-    { src: "/about3.jpg", cap: t("about_gallery_cap_3") },
+    { src: about1, cap: t("about_gallery_cap_1") },
+    { src: about2, cap: t("about_gallery_cap_2") },
+    { src: about3, cap: t("about_gallery_cap_3") },
   ];
 
   const badges = [
@@ -106,9 +109,8 @@ const About = () => {
           {badges.map((badge, i) => (
             <div
               key={i}
-              className={`flex flex-col items-center justify-center text-center py-10 px-6 ${
-                i < 2 ? "md:border-r border-gray-100" : ""
-              } ${i > 0 ? "border-t md:border-t-0 border-gray-100" : ""}`}
+              className={`flex flex-col items-center justify-center text-center py-10 px-6 ${i < 2 ? "md:border-r border-gray-100" : ""
+                } ${i > 0 ? "border-t md:border-t-0 border-gray-100" : ""}`}
             >
               <span className="text-primary/40 text-lg mb-4">{badge.icon}</span>
               <p className="text-[14px] font-bold text-gray-800 mb-1">{badge.l1}</p>
