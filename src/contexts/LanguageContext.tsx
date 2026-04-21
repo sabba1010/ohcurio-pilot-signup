@@ -51,7 +51,7 @@ export const translations: Record<Language, any> = {
     hero_title: "The patron engagement platform public libraries have been waiting for.",
     hero_subtitle: "",
     hero_cta: "Join the Pilot Program",
-    hero_desc: "Reconnect your library with the community it serves. Oh Curio! helps libraries engage patrons through meaningful, personalized communication — effortlessly.",
+    hero_desc: "Reconnect your library with the community it serves. Oh Curio! helps libraries engage patrons through meaningful, personalized communication .",
     prob_title: "Libraries deserve better tools",
     prob_label: "The Problem",
     prob_p1: "Patron engagement relies on outdated flyers and generic emails",

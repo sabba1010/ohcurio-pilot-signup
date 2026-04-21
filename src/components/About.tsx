@@ -12,8 +12,8 @@ const About = () => {
 
   const badges = [
     { icon: "®", l1: t("about_badge_1_l1"), l2: t("about_badge_1_l2") },
-    { icon: "■", l1: t("about_badge_2_l1"), l2: t("about_badge_2_l2") },
-    { icon: "■", l1: t("about_badge_3_l1"), l2: t("about_badge_3_l2") },
+    { icon: "🔐", l1: t("about_badge_2_l1"), l2: t("about_badge_2_l2") },
+    { icon: "📍", l1: t("about_badge_3_l1"), l2: t("about_badge_3_l2") },
   ];
 
 
@@ -56,7 +56,7 @@ const About = () => {
         </motion.h2>
 
         {/* Photo Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 flex justify-center items-end">
           {photos.map((photo, i) => (
             <motion.div
               key={i}
@@ -64,17 +64,21 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="group border border-gray-200 bg-white p-4 transition-all duration-300 hover:border-gray-300"
+              className="group bg-white p-6 pb-10 transition-all duration-300 hover:shadow-lg hover:scale-105 shadow-md"
+              style={{
+                transform: `rotate(${i === 0 ? "-2deg" : i === 2 ? "2deg" : "0deg"})`,
+                backgroundColor: "#fdfbf7",
+              }}
             >
-              <div className="overflow-hidden h-[280px] md:h-[320px] mb-4">
+              <div className="overflow-hidden h-[280px] md:h-[320px] mb-6 bg-gray-100">
                 <img
                   src={photo.src}
                   alt={photo.cap}
                   className="w-full h-full object-cover block group-hover:opacity-95 transition-opacity duration-500"
                 />
               </div>
-              <div>
-                <p className="text-[15px] text-gray-600 leading-snug">
+              <div className="px-1">
+                <p className="text-[13px] text-gray-600 leading-relaxed font-light italic">
                   {photo.cap}
                 </p>
               </div>
