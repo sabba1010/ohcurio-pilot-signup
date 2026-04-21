@@ -99,8 +99,9 @@ const FAQ = () => {
           </div>
         </motion.div>
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 };
 
 export default FAQ;
