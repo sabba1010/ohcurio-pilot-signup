@@ -5,9 +5,9 @@ const About = () => {
   const { t } = useLanguage();
 
   const photos = [
-    { src: "/about1.jpeg", cap: t("about_gallery_cap_1") },
-    { src: "/about2.jpeg", cap: t("about_gallery_cap_2") },
-    { src: "/about3.jpeg", cap: t("about_gallery_cap_3") },
+    { src: "/about1.jpg", cap: t("about_gallery_cap_1") },
+    { src: "/about2.jpg", cap: t("about_gallery_cap_2") },
+    { src: "/about3.jpg", cap: t("about_gallery_cap_3") },
   ];
 
   const badges = [
