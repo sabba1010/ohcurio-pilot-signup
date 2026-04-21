@@ -37,25 +37,8 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-24 bg-background">
+    <section className="pt-8 pb-24 bg-background">
       <div className="max-w-4xl mx-auto px-6">
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-[11px] font-bold tracking-[0.18em] text-[#c0392b] uppercase mb-3 text-center"
-        >
-          FAQ
-        </motion.p>
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-[30px] md:text-[36px] font-serif font-bold text-gray-900 leading-tight mb-16 text-center"
-        >
-          {t("about_directors_link")}
-        </motion.h2>
-
         <div className="space-y-6">
           {questions.map((q, i) => (
           <motion.div
