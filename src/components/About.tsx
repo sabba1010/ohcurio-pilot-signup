@@ -120,16 +120,6 @@ const About = () => {
           ))}
         </div>
 
-        {/* Footer Link Bar */}
-        <div className="border-y border-gray-200 py-8 my-12 text-center bg-background">
-          <a
-            href="#"
-            className="text-[14px] font-bold tracking-[0.3em] text-[#c0392b] hover:opacity-80 transition-opacity uppercase"
-          >
-            {t("about_directors_link")}
-          </a>
-        </div>
-
       </div>
     </section>
   );
