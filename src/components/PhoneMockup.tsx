@@ -37,6 +37,14 @@ const PhoneMockup = () => {
   return (
     <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", height: "100%" }}>
       <style>{`
+        @keyframes point-down {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(8px); }
+        }
+        .try-me-animation {
+          animation: point-down 1.2s ease-in-out infinite;
+        }
+
         /* Space Black titanium frame */
         .iphone-frame-black {
           background: linear-gradient(
@@ -77,6 +85,48 @@ const PhoneMockup = () => {
           flexShrink: 0,
         }}
       >
+        {/* ── Try Me! Arrow ── */}
+        <div style={{
+          position: "absolute",
+          top: -85,
+          left: "50%",
+          transform: "translateX(-50%)",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 4,
+          zIndex: 100,
+          pointerEvents: "none",
+        }}>
+          <span style={{
+            fontFamily: "var(--font-heading)",
+            fontSize: "1.4rem",
+            fontWeight: 700,
+            color: "hsl(var(--primary))",
+            whiteSpace: "nowrap",
+            textShadow: "0 2px 10px rgba(0,0,0,0.05)",
+            letterSpacing: "0.02em"
+          }}>
+            Try me!
+          </span>
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            className="try-me-animation"
+            style={{ filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.1))" }}
+          >
+            <path
+              d="M12 5V19M12 19L5 12M12 19L19 12"
+              stroke="hsl(var(--primary))"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
+
         {/* Action button (left top) */}
         <div className="iphone-btn-black" style={{ position:"absolute", left:-3.5, top:130, width:4, height:30, borderRadius:"3px 0 0 3px" }} />
         {/* Volume Up */}

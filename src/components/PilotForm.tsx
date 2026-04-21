@@ -31,20 +31,30 @@ const PilotForm = () => {
     return Object.keys(e).length === 0;
   };
 
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!validate()) return;
     setSubmitting(true);
+    setSubmitError(null);
     try {
-      await fetch("/api/contact", {
+      const response = await fetch("/api/email/send-welcome", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Failed to submit form");
+      }
+
       setSubmitted(true);
       setForm({ name: "", library: "", email: "", message: "" });
-    } catch {
-      // silently handle
+    } catch (err: any) {
+      console.error("Submission error:", err);
+      setSubmitError(err.message || "Something went wrong. Please try again.");
     } finally {
       setSubmitting(false);
     }
@@ -97,6 +107,11 @@ const PilotForm = () => {
               <textarea id="message" rows={4} className={inputClass} placeholder={t("form_msg_placeholder")}
                 value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} />
             </div>
+            {submitError && (
+              <div className="p-4 rounded-lg bg-destructive/10 border border-destructive/20 text-destructive text-sm">
+                {submitError}
+              </div>
+            )}
             <button type="submit" disabled={submitting}
               className="w-full bg-primary text-primary-foreground py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-all hover:shadow-lg hover:shadow-primary/20 disabled:opacity-60 active:scale-[0.98]">
               {submitting ? t("form_submitting") : t("form_cta")}
