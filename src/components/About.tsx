@@ -1,16 +1,13 @@
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion } from "framer-motion";
-import about1 from "../asstes/about1.jpeg";
-import about2 from "../asstes/about2.jpeg";
-import about3 from "../asstes/about3.jpeg";
 
 const About = () => {
   const { t } = useLanguage();
 
   const photos = [
-    { src: about1, cap: t("about_gallery_cap_1") },
-    { src: about2, cap: t("about_gallery_cap_2") },
-    { src: about3, cap: t("about_gallery_cap_3") },
+    { src: "https://i.ibb.co.com/VprpF6DW/about1.jpg", cap: t("about_gallery_cap_1") },
+    { src: "https://i.ibb.co.com/G3dZSNLY/about2.jpg", cap: t("about_gallery_cap_2") },
+    { src: "https://i.ibb.co.com/KjtmRF8J/about3.jpg", cap: t("about_gallery_cap_3") },
   ];
 
   const badges = [
