@@ -56,22 +56,22 @@ const About = () => {
           {photos.map((photo, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, scale: 0.96, y: 20 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="group border border-gray-100 rounded-[2rem] overflow-hidden bg-white shadow-2xl hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-1"
+              className="group border border-gray-200 bg-white p-4 transition-all duration-300 hover:border-gray-300"
             >
-              <div className="overflow-hidden h-[240px]">
+              <div className="overflow-hidden h-[280px] md:h-[320px] mb-4">
                 <img
                   src={photo.src}
                   alt={photo.cap}
-                  className="w-full h-full object-cover block group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover block group-hover:opacity-95 transition-opacity duration-500"
                 />
               </div>
-              <div className="p-4 bg-white">
-                <p className="text-[13px] text-gray-600 font-medium leading-relaxed italic">
-                  "{photo.cap}"
+              <div>
+                <p className="text-[15px] text-gray-600 leading-snug">
+                  {photo.cap}
                 </p>
               </div>
             </motion.div>
