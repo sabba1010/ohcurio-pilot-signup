@@ -37,7 +37,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="pt-8 pb-24 bg-background">
+    <section className="pt-2 pb-24 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         {/* Top Header */}
         <div className="border-y border-gray-200 py-8 mb-16 text-center bg-background">
@@ -48,7 +48,7 @@ const FAQ = () => {
       </div>
       
       <div className="max-w-4xl mx-auto px-6">
-        <div className="space-y-6">
+        <div className="space-y-2">
           {questions.map((q, i) => (
           <motion.div
             key={i}
