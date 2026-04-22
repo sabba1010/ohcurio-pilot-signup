@@ -21,7 +21,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/95 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#hero" onClick={(event) => scrollToSection(event, "hero")} className="group flex items-center gap-3">
-          <img src="/logo 1.png" alt="Oh Curio! Logo" className="h-14 md:h-20 object-contain w-auto" />
+          <img src="/logo 1.png" alt="Oh Curio! Logo" className="h-10 md:h-12 object-contain w-auto rounded-sm overflow-hidden shadow-sm" />
           {/* <span className="text-2xl md:text-3xl font-bold tracking-tight text-primary font-heading italic">
             Oh Curio!
           </span> */}
