@@ -170,6 +170,7 @@ const About = () => {
       </div>
     </section>
   );
+  
 };
 
 export default About;
