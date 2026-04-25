@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => ({
     },
     proxy: {
       "/api": {
-        target: "https://client-13-backend.vercel.app",
+        target: "http://localhost:5000",
         changeOrigin: true,
       },
     },
