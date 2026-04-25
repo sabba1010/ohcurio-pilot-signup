@@ -39,7 +39,8 @@ const PilotForm = () => {
     setSubmitting(true);
     setSubmitError(null);
     try {
-      const response = await fetch("/api/email/send-welcome", {
+      const API_BASE_URL = import.meta.env.VITE_API_URL || "https://client-13-backend.vercel.app";
+      const response = await fetch(`${API_BASE_URL}/api/email/send-welcome`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
