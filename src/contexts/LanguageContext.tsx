@@ -143,7 +143,7 @@ export const translations: Record<Language, any> = {
     faq_q2_body: "Three steps: your IT staff enables the REST API in Koha's system preferences (a single checkbox), generates an API key, and shares it with us. We handle everything else — catalog sync, notification setup, patron onboarding, and staff training. Most libraries are live within 30 days.",
     faq_q3_badge: "GRANT-FUNDABLE",
     faq_q3_title: "What does it cost?",
-    faq_q3_body: "Oh Curio! is priced at approximately $1 per active cardholder per year — typically $15,000–$40,000 annually for a mid-size library. The pilot program is fundable through your state's LSTA grant allocation. We provide a ready-made application template to every pilot partner. Many libraries can launch at zero direct budget cost.",
+    faq_q3_body: "Oh Curio! is priced at approximately $1 per active cardholder per year. Most libraries qualify for LSTA grant funding — ask us about it in the pilot application. We provide a ready-made application template to every pilot partner. Many libraries can launch at zero direct budget cost.",
     faq_q4_title: "How much work is this for our staff?",
     faq_q4_body: "We designed Oh Curio! specifically for libraries with limited IT resources — including libraries with no dedicated IT staff. The admin panel has a guided setup checklist and we provide hands-on onboarding throughout. After launch, day-to-day operation requires no technical maintenance from your team.",
     faq_q5_title: "What ILS systems do you support beyond Koha?",
