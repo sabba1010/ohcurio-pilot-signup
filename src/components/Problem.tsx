@@ -20,7 +20,7 @@ const Problem = () => {
           </ul>
         </div>
         <div className="rounded-[2rem] bg-white p-8 shadow-sm">
-          <h3 className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-6">
+          <h3 className="text-sm font-semibold tracking-widest text-muted-foreground mb-6">
             {t("sol_label")}
           </h3>
           <ul className="space-y-5 text-foreground text-base md:text-lg leading-relaxed">
