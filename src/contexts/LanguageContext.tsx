@@ -118,7 +118,7 @@ export const translations: Record<Language, any> = {
     ui_renew: "Tap to renew",
     ui_before_msg: "NOTICE: Item barcode #39153030842740 has reached the front of the request queue. Please collect within 7 days or your hold will be cancelled.",
     ui_after_msg: "Spare is waiting for you! Pickup by Friday. Tap to renew or let us know if you need more time.",
-    // --- About Section ---
+
     about_tag: "ABOUT Oh Curio!",
     about_title_1: "Built by a library patron.",
     about_title_2: "Right here in Sparta, NJ.",
