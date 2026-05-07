@@ -42,7 +42,7 @@ export const useLanguage = () => {
 
 export const translations: Record<Language, any> = {
   en: {
-    nav_why: "Why Oh Curio!?",
+    nav_why: "Why Oh Curio!",
     nav_features: "Features",
     nav_pilot: "Pilot",
     nav_join: "Join the Pilot Program",
@@ -153,7 +153,7 @@ export const translations: Record<Language, any> = {
   },
 
   es: {
-    nav_why: "¿Por qué Oh Curio!?",
+    nav_why: "¿Por qué Oh Curio!",
     nav_features: "Funciones",
     nav_pilot: "Piloto",
     nav_join: "Unirse al Piloto",
@@ -249,7 +249,7 @@ export const translations: Record<Language, any> = {
   },
 
   fr: {
-    nav_why: "Pourquoi Oh Curio!?",
+    nav_why: "Pourquoi Oh Curio!",
     nav_features: "Fonctionnalités",
     nav_pilot: "Pilote",
     nav_join: "Rejoindre le Pilote",
@@ -345,7 +345,7 @@ export const translations: Record<Language, any> = {
   },
 
   zh: {
-    nav_why: "为什么选择 Oh Curio!?",
+    nav_why: "为什么选择 Oh Curio!",
     nav_features: "功能",
     nav_pilot: "试点项目",
     nav_join: "加入试点项目",
@@ -441,7 +441,7 @@ export const translations: Record<Language, any> = {
   },
 
   ar: {
-    nav_why: "لماذا أوه كيريو؟",
+    nav_why: "لماذا أوه كيريو",
     nav_features: "الميزات",
     nav_pilot: "البرنامج التجريبي",
     nav_join: "انضم للبرنامج التجريبي",
