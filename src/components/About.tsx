@@ -141,9 +141,12 @@ const About = () => {
 
           {/* Monospace notification block */}
           <div className="bg-[#f9f9f5] border-l-4 border-primary/30 rounded-r-lg px-6 py-5 mb-8">
-            <p className="font-mono text-[14px] text-gray-500 leading-relaxed tracking-tight">
-              {t("about_notif_quote")}
-            </p>
+            <div className="flex justify-center items-center w-full">
+              {/* <p className="font-mono text-[14px] text-gray-500 leading-relaxed tracking-tight flex-1">
+                {t("about_notif_quote")}
+              </p> */}
+              <img src="/client image 2.png" alt="Client Image" className="max-w-full w-auto max-h-[400px] object-contain rounded-md shadow-sm border border-gray-200" />
+            </div>
           </div>
 
           <p className="text-[17px] text-gray-700 leading-[1.8] font-sans">
