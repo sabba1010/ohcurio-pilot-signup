@@ -24,7 +24,8 @@ const Features = () => {
         {features.map((f, index) => (
           <div
             key={f.title}
-            className="p-8 rounded-3xl border border-border bg-card transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-lg hover:border-primary/30"
+            className="p-8 rounded-3xl border border-border/50 bg-card shadow-2xl animate-float"
+            style={{ animationDelay: `-${index * 1.5}s` }}
           >
             <h3 className="text-lg font-bold text-foreground mb-2 font-sans" style={{ fontFamily: 'var(--font-body)' }}>
               {f.title}
