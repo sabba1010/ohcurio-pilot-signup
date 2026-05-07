@@ -21,7 +21,12 @@ const Problem = () => {
         </div>
         <div className="rounded-[2rem] bg-white p-8 shadow-sm">
           <h3 className="text-sm font-semibold tracking-widest text-muted-foreground mb-6">
-            {t("sol_label")}
+            {t("sol_label").split("Oh Curio!").map((part: string, i: number, arr: string[]) => (
+              <span key={i}>
+                {part}
+                {i < arr.length - 1 && <span className="text-[#e35336]">Oh Curio!</span>}
+              </span>
+            ))}
           </h3>
           <ul className="space-y-5 text-foreground text-base md:text-lg leading-relaxed">
             <li>{t("sol_p1")}</li>
