@@ -27,7 +27,7 @@ const About = () => {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-[11px] font-bold tracking-[0.18em] text-[#c0392b] uppercase mb-3 text-center"
+          className="text-[15px] font-bold tracking-[0.18em] text-[#c0392b] uppercase mb-3 text-center " style={{ fontFamily: 'var(--font-heading)' }}
         >
           {t("about_tag")}
         </motion.p>
@@ -156,9 +156,8 @@ const About = () => {
           {badges.map((badge, i) => (
             <div
               key={i}
-              className={`flex flex-col items-center justify-center text-center py-10 px-6 ${
-                i < 2 ? "md:border-r border-gray-100" : ""
-              } ${i > 0 ? "border-t md:border-t-0 border-gray-100" : ""}`}
+              className={`flex flex-col items-center justify-center text-center py-10 px-6 ${i < 2 ? "md:border-r border-gray-100" : ""
+                } ${i > 0 ? "border-t md:border-t-0 border-gray-100" : ""}`}
             >
               <span className="text-gray-400 text-lg mb-4">{badge.icon}</span>
               <p className="text-[14px] font-bold text-gray-800 mb-1">{badge.l1}</p>
@@ -170,7 +169,7 @@ const About = () => {
       </div>
     </section>
   );
-  
+
 };
 
 export default About;
