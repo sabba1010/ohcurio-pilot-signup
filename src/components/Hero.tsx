@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center px-6 py-12 lg:py-16 max-w-7xl mx-auto w-full relative z-10">
           {/* Left: Copy */}
           <div className="text-left animate-in fade-in slide-in-from-left duration-1000 max-w-2xl">
-            <p className="text-lg font-bold tracking-[0.2em] uppercase text-primary mb-8 font-body">
+            <p className="text-[22px] font-bold tracking-[0.2em] text-primary mb-8" style={{ fontFamily: 'var(--font-heading)' }}>
               {t("hero_tag")}
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-[1.1] tracking-tight font-heading">
