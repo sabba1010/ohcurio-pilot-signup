@@ -27,7 +27,7 @@ const About = () => {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-[15px] font-bold tracking-[0.18em] text-[#c0392b] uppercase mb-3 text-center " style={{ fontFamily: 'var(--font-heading)' }}
+          className="text-[15px] font-bold tracking-[0.18em] text-[#c0392b] mb-3 text-center " style={{ fontFamily: 'var(--font-heading)' }}
         >
           {t("about_tag")}
         </motion.p>
